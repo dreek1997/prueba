@@ -1,0 +1,166 @@
+/* ================================
+   estilos.css - BMX Store
+   ================================ */
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #000;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff4c4c;
+}
+
+.btn {
+  font-family: "Indie Flower", cursive;
+}
+
+/* Carrusel */
+.carousel-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-item .row {
+  padding: 1rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Fuentes */
+.indie-flower-regular, h1, h2 {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Tarjetas */
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-extra-text {
+  margin-top: 10px;
+  color: #555;
+  font-size: 14px;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Botón personalizado */
+.custom-btn {
+  background-color: #ff4c4c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 1rem;
+  font-family: "Indie Flower", cursive;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.custom-btn:hover {
+  background-color: #d13232;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  border-top: 2px solid #444;
+}
+
+.social-icons a:hover i {
+  color: #ff4081;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a i {
+  vertical-align: middle;
+}
+
+/* Imagen con sombra */
+.img-con-sombra {
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.9);
+}
+
+/* Transiciones de página */
+.contenido {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.contenido.fade-out {
+  opacity: 0;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carousel-img {
+    max-height: 300px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  .card-img-top {
+    width: 90%;
+    margin: auto;
+  }
+
+  footer .social-icons a {
+    margin-bottom: 10px;
+  }
+}
